@@ -17,11 +17,22 @@
       .navbar{
         background: transparent;
       }
+      .navbarmargin{
+        margin-left: 18%;
+      }
       .navbar-nav .nav-link {
         color: 
         #a2b1c6;
         font-size: small;
       }
+      .imagecss{
+
+        width: 120%;
+        margin-top: -9%;
+        margin-bottom: 10px;
+        
+      }
+               
    
      .bubbles{
         position: relative;
@@ -56,7 +67,33 @@
      .bubble span:nth-child(even){
         box-shadow: 0 0 0 0.5px  #fff ;
      }
-
+     .button1{
+      
+      border-radius: 5px;
+      box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.3);
+      font-weight: 400;
+      border: 1px solid #1adb80;
+      background: #1adb80;
+      padding: 15px 34px;
+      text-transform: uppercase;
+      color: #222;
+     }
+     .button2{
+      border-radius: 5px;
+      box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.3);
+      font-weight: 400;
+      border: 1px solid #1adb80;
+      background: #1adb80;
+      padding: 15px 34px;
+      text-transform: uppercase;
+      color: #222;
+      
+    
+     }
+     
+    
+     
+  
 
      @keyframes animate {
         0%{
@@ -76,6 +113,7 @@
      }
 
      section .wave{
+      overflow: hidden;
       position: absolute;
       bottom: 0px;
       left: 0;
@@ -133,6 +171,9 @@
   }
   .mycss{
 margin-top: 0px;
+  }
+  .navbarmargin{
+    margin-left: 3%;
   }
   
   
