@@ -75,10 +75,12 @@ body {
 .bubble span:nth-child(odd) {
   box-shadow: 0 0 0 0.5px #fff;
 }
-h1{
+
+h1 {
   margin-bottom: 30px;
 }
-h6{
+
+h6 {
   margin-bottom: 25px;
 }
 
@@ -199,26 +201,31 @@ section .wave {
 }
 
 @media screen and (max-width: 600px) {
- 
+
   .owncss {
     text-align: center;
     justify-content: center;
     margin-top: 1px;
   }
-  h1{
-    margin-bottom: 20px;
+
+  h1 {
+    margin-bottom: 30px;
   }
-  h6{
+
+  h6 {
     margin-bottom: 10px;
   }
-.button1{
-  width: 100%;
-}
-.button2{
-  width: 100%;
-}
+
+  .button1 {
+    width: 100%;
+  }
+
+  .button2 {
+    width: 100%;
+  }
+
   .mycss {
-    height: 14rem;
+    height: 13rem;
 
   }
 
