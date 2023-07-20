@@ -1,183 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #010a17;
+  font-family: "Nunito", "Helvetica", "Arial", "sans-serif" !important;
+}
+
+.navbar {
+  background: transparent;
+}
+
+.navbarmargin {
+  margin-left: 18%;
+}
+
+.navbar-nav .nav-link {
+  color:
+    #a2b1c6;
+  font-size: small;
+}
+
+.imagecss {
+
+  width: 120%;
+  margin-top: -9%;
+  margin-bottom: 10px;
+
+}
+
+
+.bubbles {
+  position: relative;
+  display: flex;
+}
+
+.bubbles span {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  background: white;
+  margin: 0 5px;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(150s / var(--i));
+
+}
+
+.bubble {
+  position: relative;
+  display: flex;
+}
+
+.bubble span {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background: white;
+  margin: 0 10px;
+  animation: animate1 15s linear infinite;
+  animation-duration: calc(200s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+  box-shadow: 0 0 0 0.5px #fff;
+}
+
+.bubble span:nth-child(odd) {
+  box-shadow: 0 0 0 0.5px #fff;
+}
+
+.button1 {
+  width: 15rem;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+  border: 1px solid #1adb80;
+  background: #1adb80;
+  padding: 15px 34px;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.button2 {
+  border-radius: 5px;
+  box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+  border: 1px solid #1adb80;
+  background: #1adb80;
+  padding: 15px 34px;
+  text-transform: uppercase;
+  color: #222;
+  width: 12rem;
+}
+
+
+
+
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh);
   }
 
-    body{
-        font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5;
-      color: #212529;
-      text-align: left;
-      background-color: #010a17;
-        font-family: "Nunito", "Helvetica", "Arial", "sans-serif" !important;
-      }
-      .navbar{
-        background: transparent;
-      }
-      .navbarmargin{
-        margin-left: 18%;
-      }
-      .navbar-nav .nav-link {
-        color: 
-        #a2b1c6;
-        font-size: small;
-      }
-      .imagecss{
+  100% {
+    transform: translateY(-10vh);
+  }
+}
 
-        width: 120%;
-        margin-top: -9%;
-        margin-bottom: 10px;
-        
-      }
-               
-   
-     .bubbles{
-        position: relative;
-        display: flex;
-     }
-     .bubbles span{
-        position: relative;
-        width: 1px;
-        height: 1px;
-        background: white;
-        margin: 0 5px;
-        animation: animate 15s linear infinite;
-        animation-duration: calc(150s / var(--i));
-        
-     }
-     .bubble{
-        position: relative;
-        display: flex;
-     }
-     .bubble span{
-        position: relative;
-        width: 2px;
-        height: 2px;
-        background: white;
-        margin: 0 10px;
-        animation: animate1 15s linear infinite;
-        animation-duration: calc(200s / var(--i));
-     }
-     .bubbles span:nth-child(even){
-        box-shadow: 0 0 0 0.5px  #fff ;
-     }
-     .bubble span:nth-child(even){
-        box-shadow: 0 0 0 0.5px  #fff ;
-     }
-     .button1{
-      
-      border-radius: 5px;
-      box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.3);
-      font-weight: 400;
-      border: 1px solid #1adb80;
-      background: #1adb80;
-      padding: 15px 34px;
-      text-transform: uppercase;
-      color: #222;
-     }
-     .button2{
-      border-radius: 5px;
-      box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.3);
-      font-weight: 400;
-      border: 1px solid #1adb80;
-      background: #1adb80;
-      padding: 15px 34px;
-      text-transform: uppercase;
-      color: #222;
-      
-    
-     }
-     
-    
-     
-  
+@keyframes animate1 {
+  0% {
+    transform: translateY(100vh);
+  }
 
-     @keyframes animate {
-        0%{
-            transform: translateY(100vh) ;
-        }
-        100%{
-            transform: translateY(-10vh) ;
-        }
-     }
-     @keyframes animate1 {
-        0%{
-            transform: translateY(100vh) ;
-        }
-        100%{
-            transform: translateY(-10vh) ;
-        }
-     }
+  100% {
+    transform: translateY(-10vh);
+  }
+}
 
-     section .wave{
-      overflow: hidden;
-      position: absolute;
-      bottom: 0px;
-      left: 0;
-      width: 100%;
-      height: 100px;
-      background: url(./images/wave.png);
-      background-size: 1000px 100px;
-      background-repeat:  repeat;
-  
-     }
-    .wave1{
-         animation: mymove 30s linear infinite;
-         z-index: 1000;
-         opacity: 0.2;
-         animation-delay: 0s;
-         bottom: 0;
-     }
-     .wave2{
-        animation: mymove2 15s linear infinite;
-        z-index: 999;
-        opacity: 0.5;
-        animation-delay: -5s;
-        bottom: 10px;
-    }
-    .wave3{
-        animation: mymove 5s linear infinite;
-        z-index: 998;
-        opacity: 0.2;
-        animation-delay: -2s;
-        bottom: 10px;
-    }
-    .wave4{
-        animation: mymove2 30s linear infinite;
-        z-index: 997;
-        opacity: 0.7;
-        animation-delay: -2s;
-        bottom: 10px;
-    }
-   
+section .wave {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(./images/wave.png);
+  background-size: 1000px 100px;
+  background-repeat: repeat;
+
+}
+
+.wave1 {
+  animation: mymove 30s linear infinite;
+  z-index: 1000;
+  opacity: 0.2;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+.wave2 {
+  animation: mymove2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+.wave3 {
+  animation: mymove 5s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 10px;
+}
+
+.wave4 {
+  animation: mymove2 30s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -2s;
+  bottom: 10px;
+}
 
 
-    @keyframes mymove{
-        0%{background-position-x: 0px;}
-        100%{background-position-x: 1000px;}
-    }
-    @keyframes mymove2{
-        0%{background-position-x: 0px;}
-        100%{background-position-x: -1000px;}
-    }
+
+@keyframes mymove {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes mymove2 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
 @media screen and (max-width: 600px) {
-  .owncss{
+ 
+  .owncss {
     text-align: center;
     justify-content: center;
     margin-top: 1px;
   }
-  .mycss{
-height: 11rem;
+.button1{
+  width: 100%;
+}
+.button2{
+  width: 100%;
+}
+  .mycss {
+    height: 15rem;
 
   }
 
-  
-  .navbarmargin{
+
+  .navbarmargin {
     margin-left: 3%;
   }
-  
-  
+
+
 }
