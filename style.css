@@ -12,9 +12,6 @@
       color: #212529;
       text-align: left;
       background-color: #010a17;
-      overflow: hidden;
-        
-        
         font-family: "Nunito", "Helvetica", "Arial", "sans-serif" !important;
       }
       .navbar{
@@ -137,8 +134,6 @@
   .mycss{
 margin-top: 0px;
   }
-  body{
-    background: green;
-  }
+  
   
 }
